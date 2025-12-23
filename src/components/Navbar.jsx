@@ -18,9 +18,7 @@ export default function Navbar() {
           </h1>
         </div>
 
-        <div className="flex items-center gap-6 text-white">
-          <ThemeToggle />
-        </div>
+       
       </div>
     </nav>
   );
