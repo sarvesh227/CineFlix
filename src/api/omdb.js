@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const omdb = axios.create({
-  baseURL: "https://www.omdbapi.com/",
+  baseURL: import.meta.env.VITE_OMDB_API_URL,
   params: {
-    apikey: "42f6a69e",
+    apikey: import.meta.env.VITE_OMDB_API_KEY,
   },
 });
 
