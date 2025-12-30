@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+    --color-netflix: #E50914;
+    --color-netflix-dark: #b20710;
+    --color-background-dark: #141414;
+    --color-background-light: #ffffff;
+}
+
+@layer base {
+    body {
+        @apply bg-background-light text-gray-900 transition-colors duration-300;
+    }
+
+    .dark body {
+        @apply bg-background-dark text-white;
+    }
+}
+
+/* Hide Scrollbar but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
